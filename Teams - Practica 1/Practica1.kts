@@ -1,7 +1,5 @@
-// Kotlin Practice: Null Safety, Lists & Arrays
-
-fun main() {
-// Exercise 1: Optional User Details
+Fun main() {
+    // Exercise 1: Optional User Details
     var userName: String?
     var userEmail: String?
     var userBio: String?
@@ -28,7 +26,7 @@ fun main() {
         println("Bio is: $userBio")
     }
 
-//   Exercise 2: Simple To-Do List
+    //   Exercise 2: Simple To-Do List
     val todoList = mutableListOf<String>()
 
     todoList.add("Comprar un nuevo procesador")
@@ -41,12 +39,21 @@ fun main() {
     } else {
         println(todoList)
     }
+    }
+    // Verificacion de edad
+    val edad = 22
+    if (edad < 18){
+        println("Usted es menor de edad")
+    } else if (edad == 18){
+        println("Usted acaba de cumplir la mayoria de edad")
+    } else {
+        println("Usted es mayor de edad")
+    }
 
 // Exercise 3: Item Prices 💰
     val itemNames: Array<String> = arrayOf("Maquina espresso", "Cafe", "Leche", "Almendras")
     val itemPrices: Array<Double?> = arrayOf(399.99, 85.50, null, 22.00)
 }
-
 fun printItemDetails(index: Int, names: Array<String>, prices: Array<Double>) {
     if (index in names.indices){
         val name = names[index]
@@ -59,8 +66,4 @@ fun printItemDetails(index: Int, names: Array<String>, prices: Array<Double>) {
         }
     } else {
         println("Invalid item index.")
-    }
 }
-
-// Exercise 4: Default Configuration Values ⚙️
-fun
