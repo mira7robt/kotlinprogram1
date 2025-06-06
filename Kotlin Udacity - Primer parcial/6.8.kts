@@ -48,8 +48,7 @@ class Location(var x: Int, var y: Int)
 fun main() {
     val game = Game()
     while (true) {
-        print("Introduce una direccion: n/s/e/w: ")
+        print("Introduce una direccion: ")
         game.makeMove(readLine())
     }
-}#!/usr/bin/env kotlin
-
+}
