@@ -1,3 +1,5 @@
+// Primer intento de realizar los ejercicios
+
 Fun main() {
     // Exercise 1: Optional User Details
     var userName: String?
