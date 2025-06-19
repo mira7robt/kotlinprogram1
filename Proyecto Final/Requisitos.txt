@@ -1,0 +1,25 @@
+App: Buscador de Grupos de Estudio
+
+El Problema Universitario (Contexto Android)
+Encontrar compañeros de estudio para cursos específicos puede ser difícil, especialmente para estudiantes nuevos en el campus o en clases grandes.
+
+Objetivo de la App Android
+Una app Android para ayudar a los estudiantes a conectarse con compañeros para formar grupos de estudio para sus cursos.
+
+Características Principales (App Android)
+Los estudiantes pueden listar los cursos para los que necesitan compañeros de estudio.
+Navegar o buscar grupos de estudio por curso.
+Indicar disponibilidad u horarios/lugares de estudio preferidos.
+Chat (simulado) dentro de la app o intercambio de contactos para conectarse.
+Opcional: Crear 'perfiles de grupo' una vez formados.
+Habilidades Android Clave a Practicar
+RecyclerView, ViewModel, Room o Firebase Firestore para listados de grupos, funcionalidad de búsqueda, perfiles de usuario básicos.
+
+💡 Idea de Pantalla de UI (Android)
+Pantalla principal: Pestañas para "Buscar Grupos" y "Mis Grupos".
+
+"Buscar Grupos": Lista de cursos con búsquedas activas de grupos, filtro por departamento/código de curso.
+
+Pantalla de detalle del curso: Lista de estudiantes interesados, botón para expresar interés.
+
+Pantalla de perfil para gestionar los cursos listados.
