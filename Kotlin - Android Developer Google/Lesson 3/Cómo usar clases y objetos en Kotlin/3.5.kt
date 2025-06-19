@@ -46,6 +46,22 @@ Set(value) {
 override var water = volume * 0.8
 override val shape = "cylinder"
 
-class TowerTank (override var height: Int, var diameter: Int): Aquarium(height = height, width = diameter, length = diameter)
+class TowerTank (override var height: Int, var diameter: Int): Aquarium(height = height, width = diameter, length = diameter) {
     override var volume: Int
-    .
+        // ellipse area = π * r1 * r2
+        get() = (width / 2 * length / 2 * height / 1000 * PI).toInt()
+        set(value) {
+            height = ((value * 1000 / PI) / (width / 2 * length / 2)).toInt()
+        }
+
+    overrride
+    var water = volume * 0.8
+    override val shape = "cylinder"
+}
+
+fun buildAquarium() {
+    val myAquarium = Aquarium(width = 25, length = 25, height = 40)
+    myAquarium.printSize()
+    val myTower = TowerTank(diameter = 25, height = 40)
+    myTower.printSize()
+}
